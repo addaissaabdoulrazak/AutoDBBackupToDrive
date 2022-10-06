@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<button class="btn btn-success" id="btnBeginBackup" style="margin-top:60px">Take Backup</button>
+<script>
+    $(document).on('click', '#btnBeginBackup', function (e) {
+        showLoader();
+        $.ajax({
+            url: '/Home/GenerateBackupFile',
+            type: 'GET',
+            success: function (res) {
+                hideLoader();
+                if (res)
+                    toastr.success("Backup taken successfully and  files Uploaded on Google Drive ");
+                else
+                    toastr.error("Backup failed");
+            },
+            error: function (err) {
+                hideLoader();
+                toastr.error("Something went wrong. Please contact administrator");
+            }
+        });
+
+
+
+
+    });
+</script>
