@@ -57,6 +57,7 @@ Before you begin, ensure you have the following installed:
 
 ## Usage
    -Navigate to the web interface at http://localhost:port/ and click on the "Take Backup" button to manually start the backup process.
+  
    -The backups will automatically be uploaded to the configured Google Drive folder.
 
 ## Contributing
