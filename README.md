@@ -33,28 +33,28 @@ Before you begin, ensure you have the following installed:
    cd AutoDBBackupToDrive
 
 2. Configure Google Drive API
-  -Go to the Google Developers Console.
-  -Create a project and enable the Google Drive API for it.
-  -Generate your credentials.json and place it in the project root directory.
+     -Go to the Google Developers Console.
+     -Create a project and enable the Google Drive API for it.
+     -Generate your credentials.json and place it in the project root directory.
 
 3. Install dependencies
    ```sh
    dotnet restore
 
 4. Update your SQL Server connection string
--Edit the appsettings.json to include your SQL Server connection details.
+   -Edit the appsettings.json to include your SQL Server connection details.
 
 5. Run the application
    ```sh
    dotnet run
 
 ## Configuration
--Database settings: Adjust the SQL query in HomeController.cs to exclude any specific databases from being backed up.
--Google Drive settings: Set up the target folder in Google Drive in GoogleDriveAPIHelper.cs if necessary.
+   -Database settings: Adjust the SQL query in HomeController.cs to exclude any specific databases from being backed up.
+   -Google Drive settings: Set up the target folder in Google Drive in GoogleDriveAPIHelper.cs if necessary.
 
 ## Usage
--Navigate to the web interface at http://localhost:port/ and click on the "Take Backup" button to manually start the backup process.
-*The backups will automatically be uploaded to the configured Google Drive folder.
+   -Navigate to the web interface at http://localhost:port/ and click on the "Take Backup" button to manually start the backup process.
+   -The backups will automatically be uploaded to the configured Google Drive folder.
 
 ## Contributing
--Contributions are welcome. Please fork the repository and submit a pull request with your changes.
+   -Contributions are welcome. Please fork the repository and submit a pull request with your changes.
