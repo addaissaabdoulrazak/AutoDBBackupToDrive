@@ -44,9 +44,10 @@ Before you begin, ensure you have the following installed:
    dotnet restore
 
 5. Update your SQL Server connection string
+   
    -Edit the appsettings.json to include your SQL Server connection details.
 
-6. Run the application
+7. Run the application
    ```sh
    dotnet run
 
