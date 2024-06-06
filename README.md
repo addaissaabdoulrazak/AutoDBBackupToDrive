@@ -34,22 +34,25 @@ Before you begin, ensure you have the following installed:
 
 2. Configure Google Drive API
      -Go to the Google Developers Console.
+   
      -Create a project and enable the Google Drive API for it.
+   
      -Generate your credentials.json and place it in the project root directory.
 
-3. Install dependencies
+4. Install dependencies
    ```sh
    dotnet restore
 
-4. Update your SQL Server connection string
+5. Update your SQL Server connection string
    -Edit the appsettings.json to include your SQL Server connection details.
 
-5. Run the application
+6. Run the application
    ```sh
    dotnet run
 
 ## Configuration
    -Database settings: Adjust the SQL query in HomeController.cs to exclude any specific databases from being backed up.
+   
    -Google Drive settings: Set up the target folder in Google Drive in GoogleDriveAPIHelper.cs if necessary.
 
 ## Usage
